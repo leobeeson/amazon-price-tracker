@@ -38,7 +38,7 @@
 * For simplicity, the program is running on an eternal loop with a day-long `sleep` call to check for the product's price once a day.
 * For running the program locally or on a remote server, an improvement would be to call the main.py script using a [cron job](https://gavinwiener.medium.com/how-to-schedule-a-python-script-cron-job-dea6cbf69f4e) (or [Task Scheduler](https://datatofish.com/python-script-windows-scheduler/) on Windows):
     1. Remove the `sleep` call and the `NOTIFICATION_FREQUENCY` variable, as they will no longer be necessary.
-    2. Set up the crontab, e.g. to run every day at midnight (make sure to chnage the path to the python3 executable and the script location to your specific locations):
+    2. Set up the crontab, e.g. to run every day at midnight (make sure to change the path to the python3 executable and the script location to your specific locations):
         ```crontab
         0 0 * * * /usr/bin/python3 /home/%USER%/path/to/project/main.py >> ~/cron.log 2>&1
         ```
@@ -49,8 +49,8 @@
 ## Caution:
 ### Gmail App Password
 - Take care of the `app password` provided by Gmail; keep it in the `env` file or some other non-git-commitable configuration file. Again, preferably set up a separate Gmail account just for this service, and avoid using your personal email account.
-- The current `.gitignore` is currently included in the `.gitignore` file; avoid removing it from it.
-- The `request_headers.json` file with your HTTP request headers is also currently included in the `.gitignore` file. It's not the end of the world if you commit them, but some people have privacy concerns on them, and more importantly, anyone cloning your code will have to set their own anyways.
+- The current `.env` is currently included in the `.gitignore` file; avoid removing it from it.
+- The `request_headers.json` file with your HTTP request headers is also currently included in the `.gitignore` file. It's not the end of the world if you commit them, but some people have privacy concerns with them, and more importantly, anyone cloning your code will have to set their own anyways.
 
 ## Credits:
 - This project was motivated by the [Day 47 project](https://www.udemy.com/course/100-days-of-code/learn/lecture/21839858#questions/17098568), from the course [100 Days of Code: The Complete Python Pro Bootcamp for 2022](https://www.udemy.com/course/100-days-of-code/learn/).
