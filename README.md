@@ -1,7 +1,7 @@
 # Amazon Price Tracker
 
 ## Description
-Tracks a product on Amazon you choose and sends you a notification email when its price drops below a specified price.
+Tracks a product you choose on Amazon and sends you a notification email when its price drops below a specified price.
 
 ## Behaviour
 1. Decide which product in Amazon you'd like to set up a price tracker and grab its URL.
