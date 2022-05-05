@@ -49,7 +49,7 @@
 ## Caution:
 ### Gmail App Password
 - Take care of the `app password` provided by Gmail; keep it in the `env` file or some other non-git-commitable configuration file. Again, preferably set up a separate Gmail account just for this service, and avoid using your personal email account.
-- The current `.env` is currently included in the `.gitignore` file; avoid removing it from it.
+- The `.env` file is currently included in the `.gitignore` file; avoid removing it from it.
 - The `request_headers.json` file with your HTTP request headers is also currently included in the `.gitignore` file. It's not the end of the world if you commit them, but some people have privacy concerns with them, and more importantly, anyone cloning your code will have to set their own anyways.
 
 ## Credits:
