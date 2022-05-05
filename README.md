@@ -1,6 +1,6 @@
 # Amazon Price Tracker
 
-## Behavior
+## Behaviour
 1. Decide which product in Amazon you'd like to set up a price tracker and grab its URL.
 2. In main.py, replace the values for the arguments:
     * PRODUCT_NAME: Give the product a meaningful name to you.
